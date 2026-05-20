@@ -109,16 +109,16 @@
                                 <td class="py-3 px-2 text-gray-500 text-xs">{{ device.mid || '-' }}</td>
                                 <td class="py-3 px-2 text-gray-600">{{ device.owner || '-' }}</td>
                                 <td v-for="(node, idx) in device.nodes" :key="idx" class="py-3 px-2 text-center">
-                                    <div class="node-cell min-w-[80px] h-8 rounded-lg mx-auto flex items-center justify-center px-2 text-xs font-medium"
+                                    <div class="node-cell min-w-[90px] h-8 rounded-lg mx-auto flex items-center justify-center px-2 text-xs font-medium"
                                          :class="{
                                              'bg-green-500 text-white': node.status === 'completed',
-                                             'bg-red-500 text-white animate-pulse': node.status === 'overdue',
+                                             'bg-red-500 text-white': node.status === 'overdue',
                                              'bg-blue-500 text-white': node.status === 'in_progress'
                                          }"
                                          :title="node.name + (node.status === 'overdue' ? ' - 已超期!' : '')">
-                                        <span v-if="node.status === 'completed'">✓</span>
-                                        <span v-else-if="node.status === 'overdue'">{{ node.date }}⚠️</span>
-                                        <span v-else>{{ node.date }}</span>
+                                        <span v-if="node.status === 'completed'">{{ node.date }}✓</span>
+                                        <span v-else-if="node.status === 'overdue'">{{ node.date }}!</span>
+                                        <span v-else>{{ node.date }}-</span>
                                     </div>
                                 </td>
                                 <td class="py-3 px-3 text-center">
