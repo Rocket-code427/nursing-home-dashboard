@@ -103,7 +103,7 @@
                             <tr v-for="device in data.devices" :key="device.name" class="border-b border-gray-100 hover:bg-gray-50">
                                 <td class="py-3 px-3">
                                     <p class="font-medium text-gray-800">{{ device.name }}</p>
-                                    <p v-if="device.nextAction" class="text-xs text-orange-600 mt-1 truncate max-w-[180px]" :title="device.nextAction">{{ device.nextAction }}</p>
+                                    <p v-if="device.nextAction" class="text-xs text-orange-600 mt-1 max-w-[280px] leading-relaxed">{{ device.nextAction }}</p>
                                 </td>
                                 <td class="py-3 px-2 text-gray-600">{{ device.model || '-' }}</td>
                                 <td class="py-3 px-2 text-gray-500 text-xs">{{ device.mid || '-' }}</td>
