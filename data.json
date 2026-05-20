@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-05-20 21:27",
+  "updateTime": "2026-05-20 21:38",
   "devices": [
     {
       "name": "多联机",
@@ -210,32 +210,32 @@
       "model": "XQG100-DWB1201Bk1 XQG100-DWB1201Bi1 ",
       "mid": "MID：28a04\n细分码：0x0011\n细分码：0x0012",
       "owner": "文佳",
-      "nextAction": "待确认需求后返回时间节点",
+      "nextAction": "对方要求9/30上线，我方计划7/31，需协商确认最终时间节点",
       "nodes": [
         {
           "status": "in_progress",
           "name": "需求确认",
-          "date": "08/05"
+          "date": ""
         },
         {
           "status": "in_progress",
           "name": "协议提供",
-          "date": "08/19"
+          "date": ""
         },
         {
           "status": "in_progress",
           "name": "开发阶段",
-          "date": "09/02"
+          "date": ""
         },
         {
           "status": "in_progress",
           "name": "联调测试",
-          "date": "09/16"
+          "date": ""
         },
         {
           "status": "in_progress",
           "name": "正式上线",
-          "date": "09/30"
+          "date": "07/31"
         }
       ]
     },
@@ -287,7 +287,7 @@
       "title": "新风机 - 目前转化为6000mid，APP功能大于整机，确认是否维持当前方案",
       "description": "目前转化为6000mid，APP功能大于整机，确认是否维持当前方案",
       "device": "新风机",
-      "level": "P1"
+      "level": "P0"
     },
     {
       "id": 3,
@@ -319,8 +319,8 @@
     },
     {
       "id": 7,
-      "title": "洗衣机 - 待确认需求后返回时间节点",
-      "description": "待确认需求后返回时间节点",
+      "title": "洗衣机 - 对方要求9/30上线，我方计划7/31，需协商确认最终时间节点",
+      "description": "对方要求9/30上线，我方计划7/31，需协商确认最终时间节点",
       "device": "洗衣机",
       "level": "P0"
     },
