@@ -91,6 +91,30 @@ def list_records(token, table_id, view_id=None):
     return all_records
 
 
+def format_date(date_raw):
+    """格式化日期字段：支持时间戳/字符串/字典"""
+    if not date_raw:
+        return ""
+    if isinstance(date_raw, (int, float)):
+        if date_raw > 1000000000000:  # 毫秒时间戳
+            return datetime.fromtimestamp(date_raw / 1000).strftime("%m/%d")
+        elif date_raw > 1000000000:  # 秒时间戳
+            return datetime.fromtimestamp(date_raw).strftime("%m/%d")
+    elif isinstance(date_raw, str):
+        # 尝试解析常见格式
+        for fmt in ["%Y-%m-%d", "%Y/%m/%d", "%m-%d", "%m/%d"]:
+            try:
+                dt = datetime.strptime(date_raw, fmt)
+                return dt.strftime("%m/%d")
+            except ValueError:
+                continue
+        return date_raw  # 返回原始字符串
+    elif isinstance(date_raw, dict):
+        # 飞书可能返回 {text: "..."} 或 {value: "..."}
+        return format_date(date_raw.get("text") or date_raw.get("value"))
+    return str(date_raw)
+
+
 def parse_devices(records):
     """解析设备排期表 - 根据实际飞书字段映射"""
     devices = []
@@ -142,11 +166,11 @@ def parse_devices(records):
                 pass
 
         nodes = [
-            {"status": n1, "name": "需求确认"},
-            {"status": n2, "name": "协议提供"},
-            {"status": n3, "name": "开发阶段"},
-            {"status": n4, "name": "联调测试"},
-            {"status": n5, "name": "正式上线"},
+            {"status": n1, "name": "需求确认", "date": format_date(fields.get("需求确认"))},
+            {"status": n2, "name": "协议提供", "date": format_date(fields.get("协议提供"))},
+            {"status": n3, "name": "开发阶段", "date": format_date(fields.get("开发联调"))},
+            {"status": n4, "name": "联调测试", "date": format_date(fields.get("提测"))},
+            {"status": n5, "name": "正式上线", "date": format_date(fields.get("最终上线节点"))},
         ]
         
         devices.append({

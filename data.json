@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-05-20 19:54",
+  "updateTime": "2026-05-20 20:13",
   "devices": [
     {
       "name": "多联机",
@@ -10,23 +10,28 @@
       "nodes": [
         {
           "status": "completed",
-          "name": "需求确认"
+          "name": "需求确认",
+          "date": ""
         },
         {
           "status": "completed",
-          "name": "协议提供"
+          "name": "协议提供",
+          "date": ""
         },
         {
           "status": "completed",
-          "name": "开发阶段"
+          "name": "开发阶段",
+          "date": ""
         },
         {
           "status": "completed",
-          "name": "联调测试"
+          "name": "联调测试",
+          "date": "06/15"
         },
         {
           "status": "in_progress",
-          "name": "正式上线"
+          "name": "正式上线",
+          "date": "07/10"
         }
       ]
     },
@@ -39,23 +44,28 @@
       "nodes": [
         {
           "status": "completed",
-          "name": "需求确认"
+          "name": "需求确认",
+          "date": ""
         },
         {
           "status": "completed",
-          "name": "协议提供"
+          "name": "协议提供",
+          "date": ""
         },
         {
           "status": "in_progress",
-          "name": "开发阶段"
+          "name": "开发阶段",
+          "date": "05/22"
         },
         {
           "status": "pending",
-          "name": "联调测试"
+          "name": "联调测试",
+          "date": "06/26"
         },
         {
           "status": "pending",
-          "name": "正式上线"
+          "name": "正式上线",
+          "date": "07/31"
         }
       ]
     },
@@ -68,23 +78,28 @@
       "nodes": [
         {
           "status": "completed",
-          "name": "需求确认"
+          "name": "需求确认",
+          "date": ""
         },
         {
           "status": "completed",
-          "name": "协议提供"
+          "name": "协议提供",
+          "date": ""
         },
         {
           "status": "completed",
-          "name": "开发阶段"
+          "name": "开发阶段",
+          "date": ""
         },
         {
           "status": "completed",
-          "name": "联调测试"
+          "name": "联调测试",
+          "date": "06/15"
         },
         {
           "status": "in_progress",
-          "name": "正式上线"
+          "name": "正式上线",
+          "date": "07/10"
         }
       ]
     },
@@ -97,23 +112,28 @@
       "nodes": [
         {
           "status": "pending",
-          "name": "需求确认"
+          "name": "需求确认",
+          "date": "05/20"
         },
         {
           "status": "pending",
-          "name": "协议提供"
+          "name": "协议提供",
+          "date": ""
         },
         {
           "status": "in_progress",
-          "name": "开发阶段"
+          "name": "开发阶段",
+          "date": ""
         },
         {
           "status": "pending",
-          "name": "联调测试"
+          "name": "联调测试",
+          "date": ""
         },
         {
           "status": "pending",
-          "name": "正式上线"
+          "name": "正式上线",
+          "date": "07/31"
         }
       ]
     },
@@ -126,23 +146,28 @@
       "nodes": [
         {
           "status": "pending",
-          "name": "需求确认"
+          "name": "需求确认",
+          "date": "05/20"
         },
         {
           "status": "pending",
-          "name": "协议提供"
+          "name": "协议提供",
+          "date": ""
         },
         {
           "status": "in_progress",
-          "name": "开发阶段"
+          "name": "开发阶段",
+          "date": ""
         },
         {
           "status": "pending",
-          "name": "联调测试"
+          "name": "联调测试",
+          "date": ""
         },
         {
           "status": "pending",
-          "name": "正式上线"
+          "name": "正式上线",
+          "date": "07/31"
         }
       ]
     },
@@ -155,23 +180,28 @@
       "nodes": [
         {
           "status": "pending",
-          "name": "需求确认"
+          "name": "需求确认",
+          "date": "05/20"
         },
         {
           "status": "completed",
-          "name": "协议提供"
+          "name": "协议提供",
+          "date": ""
         },
         {
           "status": "in_progress",
-          "name": "开发阶段"
+          "name": "开发阶段",
+          "date": "05/22"
         },
         {
           "status": "pending",
-          "name": "联调测试"
+          "name": "联调测试",
+          "date": "06/26"
         },
         {
           "status": "pending",
-          "name": "正式上线"
+          "name": "正式上线",
+          "date": "07/31"
         }
       ]
     },
@@ -184,23 +214,28 @@
       "nodes": [
         {
           "status": "pending",
-          "name": "需求确认"
+          "name": "需求确认",
+          "date": ""
         },
         {
           "status": "pending",
-          "name": "协议提供"
+          "name": "协议提供",
+          "date": ""
         },
         {
           "status": "in_progress",
-          "name": "开发阶段"
+          "name": "开发阶段",
+          "date": ""
         },
         {
           "status": "pending",
-          "name": "联调测试"
+          "name": "联调测试",
+          "date": ""
         },
         {
           "status": "pending",
-          "name": "正式上线"
+          "name": "正式上线",
+          "date": "07/31"
         }
       ]
     },
@@ -213,23 +248,28 @@
       "nodes": [
         {
           "status": "completed",
-          "name": "需求确认"
+          "name": "需求确认",
+          "date": ""
         },
         {
           "status": "completed",
-          "name": "协议提供"
+          "name": "协议提供",
+          "date": ""
         },
         {
           "status": "completed",
-          "name": "开发阶段"
+          "name": "开发阶段",
+          "date": ""
         },
         {
           "status": "completed",
-          "name": "联调测试"
+          "name": "联调测试",
+          "date": "06/15"
         },
         {
           "status": "in_progress",
-          "name": "正式上线"
+          "name": "正式上线",
+          "date": "07/10"
         }
       ]
     }

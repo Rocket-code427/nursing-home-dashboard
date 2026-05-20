@@ -118,8 +118,8 @@
                                          }"
                                          :title="node.name">
                                         <span v-if="node.status === 'completed'">✓</span>
-                                        <span v-else-if="node.status === 'in_progress'">{{ node.name }}</span>
-                                        <span v-else>{{ node.name }}</span>
+                                        <span v-else-if="node.status === 'in_progress'">{{ node.date || node.name }}</span>
+                                        <span v-else>{{ node.date || node.name }}</span>
                                     </div>
                                 </td>
                                 <td class="py-3 px-3 text-center">
