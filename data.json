@@ -1,12 +1,12 @@
 {
-  "updateTime": "2026-05-20 20:21",
+  "updateTime": "2026-05-20 21:27",
   "devices": [
     {
       "name": "多联机",
       "model": "SDK系列/SDE系列",
       "mid": "6000",
       "owner": "郭佳妮",
-      "nextAction": "开发已完成，待跟随计划搭配主机完成测试",
+      "nextAction": "API测试PUT",
       "nodes": [
         {
           "status": "completed",
@@ -118,17 +118,17 @@
         {
           "status": "in_progress",
           "name": "协议提供",
-          "date": ""
+          "date": "06/19"
         },
         {
           "status": "in_progress",
           "name": "开发阶段",
-          "date": ""
+          "date": "07/03"
         },
         {
           "status": "in_progress",
           "name": "联调测试",
-          "date": ""
+          "date": "07/17"
         },
         {
           "status": "in_progress",
@@ -152,17 +152,17 @@
         {
           "status": "in_progress",
           "name": "协议提供",
-          "date": ""
+          "date": "06/19"
         },
         {
           "status": "in_progress",
           "name": "开发阶段",
-          "date": ""
+          "date": "07/03"
         },
         {
           "status": "in_progress",
           "name": "联调测试",
-          "date": ""
+          "date": "07/17"
         },
         {
           "status": "in_progress",
@@ -215,27 +215,27 @@
         {
           "status": "in_progress",
           "name": "需求确认",
-          "date": ""
+          "date": "08/05"
         },
         {
           "status": "in_progress",
           "name": "协议提供",
-          "date": ""
+          "date": "08/19"
         },
         {
           "status": "in_progress",
           "name": "开发阶段",
-          "date": ""
+          "date": "09/02"
         },
         {
           "status": "in_progress",
           "name": "联调测试",
-          "date": ""
+          "date": "09/16"
         },
         {
           "status": "in_progress",
           "name": "正式上线",
-          "date": "07/31"
+          "date": "09/30"
         }
       ]
     },
@@ -277,8 +277,8 @@
   "risks": [
     {
       "id": 1,
-      "title": "多联机 - 开发已完成，待跟随计划搭配主机完成测试",
-      "description": "开发已完成，待跟随计划搭配主机完成测试",
+      "title": "多联机 - API测试PUT",
+      "description": "API测试PUT",
       "device": "多联机",
       "level": "P1"
     },
@@ -287,7 +287,7 @@
       "title": "新风机 - 目前转化为6000mid，APP功能大于整机，确认是否维持当前方案",
       "description": "目前转化为6000mid，APP功能大于整机，确认是否维持当前方案",
       "device": "新风机",
-      "level": "P0"
+      "level": "P1"
     },
     {
       "id": 3,
@@ -315,7 +315,7 @@
       "title": "空气能热水器 - 全新开发：主机485协议定义 + APP功能规划",
       "description": "全新开发：主机485协议定义 + APP功能规划",
       "device": "空气能热水器",
-      "level": "P0"
+      "level": "P1"
     },
     {
       "id": 7,
