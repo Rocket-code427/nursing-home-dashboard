@@ -92,56 +92,76 @@ def list_records(token, table_id, view_id=None):
 
 
 def format_date(date_raw):
-    """格式化日期字段：支持时间戳/字符串/字典"""
+    """格式化日期字段，返回 datetime 对象或 None"""
     if not date_raw:
-        return ""
+        return None, ""
+    dt = None
     if isinstance(date_raw, (int, float)):
         if date_raw > 1000000000000:  # 毫秒时间戳
-            return datetime.fromtimestamp(date_raw / 1000).strftime("%m/%d")
+            dt = datetime.fromtimestamp(date_raw / 1000)
         elif date_raw > 1000000000:  # 秒时间戳
-            return datetime.fromtimestamp(date_raw).strftime("%m/%d")
+            dt = datetime.fromtimestamp(date_raw)
     elif isinstance(date_raw, str):
-        # 尝试解析常见格式
         for fmt in ["%Y-%m-%d", "%Y/%m/%d", "%m-%d", "%m/%d"]:
             try:
                 dt = datetime.strptime(date_raw, fmt)
-                return dt.strftime("%m/%d")
+                break
             except ValueError:
                 continue
-        return date_raw  # 返回原始字符串
     elif isinstance(date_raw, dict):
-        # 飞书可能返回 {text: "..."} 或 {value: "..."}
-        return format_date(date_raw.get("text") or date_raw.get("value"))
-    return str(date_raw)
+        dt, _ = format_date(date_raw.get("text") or date_raw.get("value"))
+        return dt, str(date_raw.get("text") or date_raw.get("value") or "")
+    
+    if dt:
+        return dt, dt.strftime("%m/%d")
+    return None, str(date_raw)
+
+
+def is_overdue(date_obj, today):
+    """判断是否超期：日期 <= 今天且未完成"""
+    if not date_obj:
+        return False
+    return date_obj.date() <= today
 
 
 def parse_devices(records):
     """解析设备排期表 - 根据实际飞书字段映射"""
     devices = []
+    today = datetime.now().date()
+    
     for r in records:
         fields = r.get("fields", {})
         name = fields.get("设备品类", "")
         if not name:
             continue
 
-        # 节点1-4: 以复选框为准，只有 completed / in_progress 两个状态
-        n1 = "completed" if fields.get("需求确认完成") is True else "in_progress"
-        n2 = "completed" if fields.get("协议提供完成") is True else "in_progress"
+        # 读取节点日期
+        d1_raw, d1_str = format_date(fields.get("需求确认"))
+        d2_raw, d2_str = format_date(fields.get("协议提供"))
+        d3_raw, d3_str = format_date(fields.get("开发联调"))
+        d4_raw, d4_str = format_date(fields.get("提测"))
+        d5_raw, d5_str = format_date(fields.get("最终上线节点"))
+
+        # 节点状态：已完成 / 进行中(超期or正常)
+        n1_done = fields.get("需求确认完成") is True
+        n2_done = fields.get("协议提供完成") is True
+        n3_done = fields.get("开发联调完成") is True
+        n4_done = fields.get("提测完成") is True
+        n5_done = fields.get("最终上线完成") is True
         
-        # 节点3: 开发联调
-        n3 = "completed" if fields.get("开发联调完成") is True else "in_progress"
-        
-        n4 = "completed" if fields.get("提测完成") is True else "in_progress"
-        
-        # 节点5: 最终上线
-        n5 = "completed" if fields.get("最终上线完成") is True else "in_progress"
+        # 判断超期：未完成且日期<=今天
+        n1 = "completed" if n1_done else ("overdue" if is_overdue(d1_raw, today) else "in_progress")
+        n2 = "completed" if n2_done else ("overdue" if is_overdue(d2_raw, today) else "in_progress")
+        n3 = "completed" if n3_done else ("overdue" if is_overdue(d3_raw, today) else "in_progress")
+        n4 = "completed" if n4_done else ("overdue" if is_overdue(d4_raw, today) else "in_progress")
+        n5 = "completed" if n5_done else ("overdue" if is_overdue(d5_raw, today) else "in_progress")
 
         nodes = [
-            {"status": n1, "name": "需求确认", "date": format_date(fields.get("需求确认"))},
-            {"status": n2, "name": "协议提供", "date": format_date(fields.get("协议提供"))},
-            {"status": n3, "name": "开发阶段", "date": format_date(fields.get("开发联调"))},
-            {"status": n4, "name": "联调测试", "date": format_date(fields.get("提测"))},
-            {"status": n5, "name": "正式上线", "date": format_date(fields.get("最终上线节点"))},
+            {"status": n1, "name": "需求确认", "date": d1_str},
+            {"status": n2, "name": "协议提供", "date": d2_str},
+            {"status": n3, "name": "开发阶段", "date": d3_str},
+            {"status": n4, "name": "联调测试", "date": d4_str},
+            {"status": n5, "name": "正式上线", "date": d5_str},
         ]
         
         devices.append({

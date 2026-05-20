@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-05-20 20:16",
+  "updateTime": "2026-05-20 20:21",
   "devices": [
     {
       "name": "多联机",
@@ -111,7 +111,7 @@
       "nextAction": "待确认需求后返回时间节点",
       "nodes": [
         {
-          "status": "in_progress",
+          "status": "overdue",
           "name": "需求确认",
           "date": "05/20"
         },
@@ -145,7 +145,7 @@
       "nextAction": "待确认需求后返回时间节点",
       "nodes": [
         {
-          "status": "in_progress",
+          "status": "overdue",
           "name": "需求确认",
           "date": "05/20"
         },
@@ -179,7 +179,7 @@
       "nextAction": "全新开发：主机485协议定义 + APP功能规划",
       "nodes": [
         {
-          "status": "in_progress",
+          "status": "overdue",
           "name": "需求确认",
           "date": "05/20"
         },
