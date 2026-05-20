@@ -31,8 +31,8 @@ TABLE_DEVICES = "全部设备排期"
 TABLE_MEETINGS = "会议纪要"
 TABLE_TASKS = "节点任务"
 
-# 节点名称映射（5个节点）
-NODE_NAMES = ["需求确认", "选型采购", "安装调试", "联调测试", "正式上线"]
+# 节点名称映射（根据飞书Base实际字段）
+NODE_NAMES = ["需求确认", "协议提供", "开发阶段", "联调测试", "正式上线"]
 
 
 def get_tenant_access_token():
@@ -157,8 +157,8 @@ def parse_devices(records):
 
         nodes = [
             {"status": n1, "name": "需求确认"},
-            {"status": n2, "name": "选型采购"},
-            {"status": n3, "name": "开发调试"},
+            {"status": n2, "name": "协议提供"},
+            {"status": n3, "name": "开发阶段"},
             {"status": n4, "name": "联调测试"},
             {"status": n5, "name": "正式上线"},
         ]

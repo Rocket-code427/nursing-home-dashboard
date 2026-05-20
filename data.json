@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-05-20 16:48",
+  "updateTime": "2026-05-20 19:21",
   "devices": [
     {
       "name": "多联机",
@@ -14,11 +14,11 @@
         },
         {
           "status": "completed",
-          "name": "选型采购"
+          "name": "协议提供"
         },
         {
           "status": "completed",
-          "name": "开发调试"
+          "name": "开发阶段"
         },
         {
           "status": "completed",
@@ -43,11 +43,11 @@
         },
         {
           "status": "pending",
-          "name": "选型采购"
+          "name": "协议提供"
         },
         {
           "status": "pending",
-          "name": "开发调试"
+          "name": "开发阶段"
         },
         {
           "status": "pending",
@@ -72,11 +72,11 @@
         },
         {
           "status": "completed",
-          "name": "选型采购"
+          "name": "协议提供"
         },
         {
           "status": "completed",
-          "name": "开发调试"
+          "name": "开发阶段"
         },
         {
           "status": "completed",
@@ -101,11 +101,11 @@
         },
         {
           "status": "pending",
-          "name": "选型采购"
+          "name": "协议提供"
         },
         {
           "status": "pending",
-          "name": "开发调试"
+          "name": "开发阶段"
         },
         {
           "status": "pending",
@@ -130,11 +130,11 @@
         },
         {
           "status": "pending",
-          "name": "选型采购"
+          "name": "协议提供"
         },
         {
           "status": "pending",
-          "name": "开发调试"
+          "name": "开发阶段"
         },
         {
           "status": "pending",
@@ -159,11 +159,11 @@
         },
         {
           "status": "pending",
-          "name": "选型采购"
+          "name": "协议提供"
         },
         {
           "status": "pending",
-          "name": "开发调试"
+          "name": "开发阶段"
         },
         {
           "status": "pending",
@@ -188,11 +188,11 @@
         },
         {
           "status": "pending",
-          "name": "选型采购"
+          "name": "协议提供"
         },
         {
           "status": "pending",
-          "name": "开发调试"
+          "name": "开发阶段"
         },
         {
           "status": "pending",
@@ -217,11 +217,11 @@
         },
         {
           "status": "completed",
-          "name": "选型采购"
+          "name": "协议提供"
         },
         {
           "status": "completed",
-          "name": "开发调试"
+          "name": "开发阶段"
         },
         {
           "status": "completed",
