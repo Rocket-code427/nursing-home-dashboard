@@ -96,7 +96,7 @@
                                 <th class="text-left py-2 px-2 text-gray-500 font-medium w-24">MID</th>
                                 <th class="text-left py-2 px-2 text-gray-500 font-medium w-16">负责人</th>
                                 <th v-for="node in nodeNames" :key="node" class="text-center py-2 px-2 text-gray-500 font-medium">{{ node }}</th>
-                                <th class="text-center py-2 px-3 text-gray-500 font-medium w-16">进度</th>
+                                <th class="text-center py-2 px-3 text-gray-500 font-medium w-24">当前节点</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -109,22 +109,22 @@
                                 <td class="py-3 px-2 text-gray-500 text-xs">{{ device.mid || '-' }}</td>
                                 <td class="py-3 px-2 text-gray-600">{{ device.owner || '-' }}</td>
                                 <td v-for="(node, idx) in device.nodes" :key="idx" class="py-3 px-2 text-center">
-                                    <div class="node-cell w-8 h-8 rounded-lg mx-auto flex items-center justify-center text-xs font-medium"
+                                    <div class="node-cell min-w-[80px] h-8 rounded-lg mx-auto flex items-center justify-center px-2"
                                          :class="{
-                                             'bg-green-500 text-white': node.status === 'completed',
-                                             'bg-blue-500 text-white': node.status === 'in_progress',
-                                             'bg-gray-200 text-gray-400': node.status === 'pending',
+                                             'bg-green-500 text-white font-medium': node.status === 'completed',
+                                             'bg-blue-500 text-white text-xs': node.status === 'in_progress',
+                                             'bg-gray-100 text-gray-300 text-xs': node.status === 'pending',
                                              'bg-red-500 text-white': node.status === 'delayed'
                                          }"
                                          :title="node.name">
                                         <span v-if="node.status === 'completed'">✓</span>
-                                        <span v-else-if="node.status === 'in_progress'">→</span>
-                                        <span v-else>-</span>
+                                        <span v-else-if="node.status === 'in_progress'">{{ node.name }}</span>
+                                        <span v-else>—</span>
                                     </div>
                                 </td>
                                 <td class="py-3 px-3 text-center">
-                                    <span class="text-sm font-bold" :class="deviceProgressColor(device)">
-                                        {{ deviceProgressPercent(device) }}%
+                                    <span class="text-xs font-medium px-2 py-1 rounded bg-blue-50 text-blue-700">
+                                        {{ device.nodes.find(n => n.status === 'in_progress')?.name || '已完成' }}
                                     </span>
                                 </td>
                             </tr>
