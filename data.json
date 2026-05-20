@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-05-20 19:21",
+  "updateTime": "2026-05-20 19:29",
   "devices": [
     {
       "name": "多联机",
@@ -38,15 +38,15 @@
       "nextAction": "目前转化为6000mid，APP功能大于整机，确认是否维持当前方案",
       "nodes": [
         {
-          "status": "in_progress",
+          "status": "completed",
           "name": "需求确认"
         },
         {
-          "status": "pending",
+          "status": "completed",
           "name": "协议提供"
         },
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "开发阶段"
         },
         {
@@ -96,7 +96,7 @@
       "nextAction": "待确认需求后返回时间节点",
       "nodes": [
         {
-          "status": "in_progress",
+          "status": "pending",
           "name": "需求确认"
         },
         {
@@ -104,7 +104,7 @@
           "name": "协议提供"
         },
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "开发阶段"
         },
         {
@@ -125,7 +125,7 @@
       "nextAction": "待确认需求后返回时间节点",
       "nodes": [
         {
-          "status": "in_progress",
+          "status": "pending",
           "name": "需求确认"
         },
         {
@@ -133,7 +133,7 @@
           "name": "协议提供"
         },
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "开发阶段"
         },
         {
@@ -154,15 +154,15 @@
       "nextAction": "全新开发：主机485协议定义 + APP功能规划",
       "nodes": [
         {
-          "status": "in_progress",
+          "status": "pending",
           "name": "需求确认"
         },
         {
-          "status": "pending",
+          "status": "completed",
           "name": "协议提供"
         },
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "开发阶段"
         },
         {
@@ -183,7 +183,7 @@
       "nextAction": "待确认需求后返回时间节点",
       "nodes": [
         {
-          "status": "in_progress",
+          "status": "pending",
           "name": "需求确认"
         },
         {
@@ -191,7 +191,7 @@
           "name": "协议提供"
         },
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "开发阶段"
         },
         {
