@@ -112,14 +112,11 @@
                                     <div class="node-cell min-w-[80px] h-8 rounded-lg mx-auto flex items-center justify-center px-2"
                                          :class="{
                                              'bg-green-500 text-white font-medium': node.status === 'completed',
-                                             'bg-blue-500 text-white text-xs': node.status === 'in_progress',
-                                             'bg-gray-100 text-gray-300 text-xs': node.status === 'pending',
-                                             'bg-red-500 text-white': node.status === 'delayed'
+                                             'bg-blue-500 text-white text-xs': node.status !== 'completed'
                                          }"
                                          :title="node.name">
                                         <span v-if="node.status === 'completed'">✓</span>
-                                        <span v-else-if="node.status === 'in_progress'">{{ node.date || node.name }}</span>
-                                        <span v-else>{{ node.date || node.name }}</span>
+                                        <span v-else>{{ node.date }}</span>
                                     </div>
                                 </td>
                                 <td class="py-3 px-3 text-center">

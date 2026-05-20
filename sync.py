@@ -124,46 +124,17 @@ def parse_devices(records):
         if not name:
             continue
 
-        # 节点1-4: 以复选框为准，不受"当前进度"文字覆盖
-        n1 = "completed" if fields.get("需求确认完成") is True else "pending"
-        n2 = "completed" if fields.get("协议提供完成") is True else "pending"
+        # 节点1-4: 以复选框为准，只有 completed / in_progress 两个状态
+        n1 = "completed" if fields.get("需求确认完成") is True else "in_progress"
+        n2 = "completed" if fields.get("协议提供完成") is True else "in_progress"
         
-        # 节点3: 开发阶段（APP + 主机）
-        app_status = fields.get("APP开发", "")
-        host_status = fields.get("主机开发", "")
-        if app_status in ["已完成", "完成", "Done", "已接入"] and host_status in ["已完成", "完成", "Done", "已接入", "需开发"]:
-            n3 = "completed"
-        elif app_status or host_status:
-            n3 = "in_progress"
-        else:
-            n3 = "pending"
+        # 节点3: 开发联调
+        n3 = "completed" if fields.get("开发联调完成") is True else "in_progress"
         
-        n4 = "completed" if fields.get("开发联调完成") is True else "pending"
+        n4 = "completed" if fields.get("提测完成") is True else "in_progress"
         
-        # 节点5: 正式上线（最终上线完成复选框）
-        n5 = "completed" if fields.get("最终上线完成") is True else "pending"
-        
-        # 仅当「当前进度」是明确的完成状态时微调
-        current = fields.get("当前进度", "")
-        if current in ["已完成", "上线", "已上线", "Done"]:
-            n1 = n2 = n3 = n4 = n5 = "completed"
-        elif current == "提测" and n5 != "completed":
-            n5 = "in_progress"
-        elif current == "开发中" and n3 != "completed":
-            n3 = "in_progress"
-        # "需求确认"/"协议提供"等进度文字不再覆盖复选框状态
-        elif current == "":
-            # 当前进度为空时，根据已完成的复选框推断
-            completed_count = sum([n1 == "completed", n2 == "completed", n3 == "completed", n4 == "completed"])
-            if completed_count == 4 and final_date:
-                n5 = "in_progress"  # 前4节点都完了，有上线日期，等待上线
-            elif completed_count == 4 and not final_date:
-                n5 = "pending"  # 前4节点都完了，但无上线日期
-            elif completed_count >= 2:
-                pass  # 保持复选框判断的状态
-            else:
-                # 如果大部分都没完成但最终日期有值，可能只是刚建记录
-                pass
+        # 节点5: 最终上线
+        n5 = "completed" if fields.get("最终上线完成") is True else "in_progress"
 
         nodes = [
             {"status": n1, "name": "需求确认", "date": format_date(fields.get("需求确认"))},

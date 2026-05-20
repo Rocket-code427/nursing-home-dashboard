@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-05-20 20:13",
+  "updateTime": "2026-05-20 20:16",
   "devices": [
     {
       "name": "多联机",
@@ -24,7 +24,7 @@
           "date": ""
         },
         {
-          "status": "completed",
+          "status": "in_progress",
           "name": "联调测试",
           "date": "06/15"
         },
@@ -58,12 +58,12 @@
           "date": "05/22"
         },
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "联调测试",
           "date": "06/26"
         },
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "正式上线",
           "date": "07/31"
         }
@@ -92,7 +92,7 @@
           "date": ""
         },
         {
-          "status": "completed",
+          "status": "in_progress",
           "name": "联调测试",
           "date": "06/15"
         },
@@ -111,12 +111,12 @@
       "nextAction": "待确认需求后返回时间节点",
       "nodes": [
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "需求确认",
           "date": "05/20"
         },
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "协议提供",
           "date": ""
         },
@@ -126,12 +126,12 @@
           "date": ""
         },
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "联调测试",
           "date": ""
         },
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "正式上线",
           "date": "07/31"
         }
@@ -145,12 +145,12 @@
       "nextAction": "待确认需求后返回时间节点",
       "nodes": [
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "需求确认",
           "date": "05/20"
         },
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "协议提供",
           "date": ""
         },
@@ -160,12 +160,12 @@
           "date": ""
         },
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "联调测试",
           "date": ""
         },
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "正式上线",
           "date": "07/31"
         }
@@ -179,7 +179,7 @@
       "nextAction": "全新开发：主机485协议定义 + APP功能规划",
       "nodes": [
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "需求确认",
           "date": "05/20"
         },
@@ -194,12 +194,12 @@
           "date": "05/22"
         },
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "联调测试",
           "date": "06/26"
         },
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "正式上线",
           "date": "07/31"
         }
@@ -213,12 +213,12 @@
       "nextAction": "待确认需求后返回时间节点",
       "nodes": [
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "需求确认",
           "date": ""
         },
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "协议提供",
           "date": ""
         },
@@ -228,12 +228,12 @@
           "date": ""
         },
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "联调测试",
           "date": ""
         },
         {
-          "status": "pending",
+          "status": "in_progress",
           "name": "正式上线",
           "date": "07/31"
         }
@@ -262,7 +262,7 @@
           "date": ""
         },
         {
-          "status": "completed",
+          "status": "in_progress",
           "name": "联调测试",
           "date": "06/15"
         },
