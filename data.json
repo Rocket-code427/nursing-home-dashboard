@@ -1,0 +1,314 @@
+{
+  "updateTime": "2026-05-20 16:48",
+  "devices": [
+    {
+      "name": "多联机",
+      "model": "SDK系列/SDE系列",
+      "mid": "6000",
+      "owner": "郭佳妮",
+      "nextAction": "开发已完成，待跟随计划搭配主机完成测试",
+      "nodes": [
+        {
+          "status": "completed",
+          "name": "需求确认"
+        },
+        {
+          "status": "completed",
+          "name": "选型采购"
+        },
+        {
+          "status": "completed",
+          "name": "开发调试"
+        },
+        {
+          "status": "completed",
+          "name": "联调测试"
+        },
+        {
+          "status": "in_progress",
+          "name": "正式上线"
+        }
+      ]
+    },
+    {
+      "name": "新风机",
+      "model": "GMV-NDX140P/A",
+      "mid": "6000",
+      "owner": "罗思蓝",
+      "nextAction": "目前转化为6000mid，APP功能大于整机，确认是否维持当前方案",
+      "nodes": [
+        {
+          "status": "in_progress",
+          "name": "需求确认"
+        },
+        {
+          "status": "pending",
+          "name": "选型采购"
+        },
+        {
+          "status": "pending",
+          "name": "开发调试"
+        },
+        {
+          "status": "pending",
+          "name": "联调测试"
+        },
+        {
+          "status": "pending",
+          "name": "正式上线"
+        }
+      ]
+    },
+    {
+      "name": "空气净化器",
+      "model": "KJ900F-A01",
+      "mid": "828105 0x9E7982",
+      "owner": "游荣狄",
+      "nextAction": "细分码828105测试中，待6月底上架前完成搭配主机的测试",
+      "nodes": [
+        {
+          "status": "completed",
+          "name": "需求确认"
+        },
+        {
+          "status": "completed",
+          "name": "选型采购"
+        },
+        {
+          "status": "completed",
+          "name": "开发调试"
+        },
+        {
+          "status": "completed",
+          "name": "联调测试"
+        },
+        {
+          "status": "in_progress",
+          "name": "正式上线"
+        }
+      ]
+    },
+    {
+      "name": "管线机",
+      "model": "GX-WJB-01C",
+      "mid": "828310 待定",
+      "owner": "刘娟红",
+      "nextAction": "待确认需求后返回时间节点",
+      "nodes": [
+        {
+          "status": "in_progress",
+          "name": "需求确认"
+        },
+        {
+          "status": "pending",
+          "name": "选型采购"
+        },
+        {
+          "status": "pending",
+          "name": "开发调试"
+        },
+        {
+          "status": "pending",
+          "name": "联调测试"
+        },
+        {
+          "status": "pending",
+          "name": "正式上线"
+        }
+      ]
+    },
+    {
+      "name": "中央净水机",
+      "model": "待定",
+      "mid": "828311",
+      "owner": "刘娟红",
+      "nextAction": "待确认需求后返回时间节点",
+      "nodes": [
+        {
+          "status": "in_progress",
+          "name": "需求确认"
+        },
+        {
+          "status": "pending",
+          "name": "选型采购"
+        },
+        {
+          "status": "pending",
+          "name": "开发调试"
+        },
+        {
+          "status": "pending",
+          "name": "联调测试"
+        },
+        {
+          "status": "pending",
+          "name": "正式上线"
+        }
+      ]
+    },
+    {
+      "name": "空气能热水器",
+      "model": "485热水湾",
+      "mid": "",
+      "owner": "罗思蓝",
+      "nextAction": "全新开发：主机485协议定义 + APP功能规划",
+      "nodes": [
+        {
+          "status": "in_progress",
+          "name": "需求确认"
+        },
+        {
+          "status": "pending",
+          "name": "选型采购"
+        },
+        {
+          "status": "pending",
+          "name": "开发调试"
+        },
+        {
+          "status": "pending",
+          "name": "联调测试"
+        },
+        {
+          "status": "pending",
+          "name": "正式上线"
+        }
+      ]
+    },
+    {
+      "name": "洗衣机",
+      "model": "XQG100-DWB1201Bk1 XQG100-DWB1201Bi1 ",
+      "mid": "MID：28a04\n细分码：0x0011\n细分码：0x0012",
+      "owner": "文佳",
+      "nextAction": "待确认需求后返回时间节点",
+      "nodes": [
+        {
+          "status": "in_progress",
+          "name": "需求确认"
+        },
+        {
+          "status": "pending",
+          "name": "选型采购"
+        },
+        {
+          "status": "pending",
+          "name": "开发调试"
+        },
+        {
+          "status": "pending",
+          "name": "联调测试"
+        },
+        {
+          "status": "pending",
+          "name": "正式上线"
+        }
+      ]
+    },
+    {
+      "name": "冰箱",
+      "model": "BCD-518WIPSG",
+      "mid": "",
+      "owner": "游荣狄",
+      "nextAction": "已满足，评估是否换售卖柜接入",
+      "nodes": [
+        {
+          "status": "completed",
+          "name": "需求确认"
+        },
+        {
+          "status": "completed",
+          "name": "选型采购"
+        },
+        {
+          "status": "completed",
+          "name": "开发调试"
+        },
+        {
+          "status": "completed",
+          "name": "联调测试"
+        },
+        {
+          "status": "in_progress",
+          "name": "正式上线"
+        }
+      ]
+    }
+  ],
+  "risks": [
+    {
+      "id": 1,
+      "title": "多联机 - 开发已完成，待跟随计划搭配主机完成测试",
+      "description": "开发已完成，待跟随计划搭配主机完成测试",
+      "device": "多联机",
+      "level": "P1"
+    },
+    {
+      "id": 2,
+      "title": "新风机 - 目前转化为6000mid，APP功能大于整机，确认是否维持当前方案",
+      "description": "目前转化为6000mid，APP功能大于整机，确认是否维持当前方案",
+      "device": "新风机",
+      "level": "P0"
+    },
+    {
+      "id": 3,
+      "title": "空气净化器 - 细分码828105测试中，待6月底上架前完成搭配主机的测试",
+      "description": "细分码828105测试中，待6月底上架前完成搭配主机的测试",
+      "device": "空气净化器",
+      "level": "P1"
+    },
+    {
+      "id": 4,
+      "title": "管线机 - 待确认需求后返回时间节点",
+      "description": "待确认需求后返回时间节点",
+      "device": "管线机",
+      "level": "P0"
+    },
+    {
+      "id": 5,
+      "title": "中央净水机 - 待确认需求后返回时间节点",
+      "description": "待确认需求后返回时间节点",
+      "device": "中央净水机",
+      "level": "P0"
+    },
+    {
+      "id": 6,
+      "title": "空气能热水器 - 全新开发：主机485协议定义 + APP功能规划",
+      "description": "全新开发：主机485协议定义 + APP功能规划",
+      "device": "空气能热水器",
+      "level": "P0"
+    },
+    {
+      "id": 7,
+      "title": "洗衣机 - 待确认需求后返回时间节点",
+      "description": "待确认需求后返回时间节点",
+      "device": "洗衣机",
+      "level": "P0"
+    },
+    {
+      "id": 8,
+      "title": "冰箱 - 已满足，评估是否换售卖柜接入",
+      "description": "已满足，评估是否换售卖柜接入",
+      "device": "冰箱",
+      "level": "P1"
+    }
+  ],
+  "meetings": [
+    {
+      "id": "recvk3cqwlG59o",
+      "no": "",
+      "title": "梳理需求内容",
+      "date": "2026-05-19",
+      "participants": "游荣狄、文佳、刘娟红、罗思蓝",
+      "summary": "",
+      "actions": [
+        "P0优先级最高：",
+        "- 洗衣机型号及mid确认",
+        "- 净水机及中央净水机型号及mid确认",
+        "- 各未完成的品类确定开发需求",
+        "P1优先级较低：",
+        "- 洗衣机节点返回",
+        "- 净水机及中央净水机节点返回"
+      ]
+    }
+  ]
+}
