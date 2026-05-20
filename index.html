@@ -113,11 +113,13 @@
                                          :class="{
                                              'bg-green-500 text-white': node.status === 'completed',
                                              'bg-red-500 text-white': node.status === 'overdue',
-                                             'bg-blue-500 text-white': node.status === 'in_progress'
+                                             'bg-yellow-400 text-gray-800': node.status === 'in_progress' && !node.date,
+                                             'bg-blue-500 text-white': node.status === 'in_progress' && node.date,
                                          }"
                                          :title="node.name + (node.status === 'overdue' ? ' - 已超期!' : '')">
                                         <span v-if="node.status === 'completed'">{{ node.date }}✓</span>
                                         <span v-else-if="node.status === 'overdue'">{{ node.date }}!</span>
+                                        <span v-else-if="!node.date" class="text-[10px]">待确认</span>
                                         <span v-else>{{ node.date }}-</span>
                                     </div>
                                 </td>
