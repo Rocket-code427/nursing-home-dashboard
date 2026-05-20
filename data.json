@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-05-20 21:50",
+  "updateTime": "2026-05-20 21:57",
   "devices": [
     {
       "name": "多联机",
@@ -33,7 +33,8 @@
           "name": "正式上线",
           "date": "07/10"
         }
-      ]
+      ],
+      "meetingActions": []
     },
     {
       "name": "新风机",
@@ -67,7 +68,8 @@
           "name": "正式上线",
           "date": "07/31"
         }
-      ]
+      ],
+      "meetingActions": []
     },
     {
       "name": "空气净化器",
@@ -101,7 +103,8 @@
           "name": "正式上线",
           "date": "07/10"
         }
-      ]
+      ],
+      "meetingActions": []
     },
     {
       "name": "管线机",
@@ -135,7 +138,8 @@
           "name": "正式上线",
           "date": "07/31"
         }
-      ]
+      ],
+      "meetingActions": []
     },
     {
       "name": "中央净水机",
@@ -168,6 +172,18 @@
           "status": "in_progress",
           "name": "正式上线",
           "date": "07/31"
+        }
+      ],
+      "meetingActions": [
+        {
+          "meeting": "梳理需求内容",
+          "date": "2026-05-19",
+          "action": "- 净水机及中央净水机型号及mid确认"
+        },
+        {
+          "meeting": "梳理需求内容",
+          "date": "2026-05-19",
+          "action": "- 净水机及中央净水机节点返回"
         }
       ]
     },
@@ -203,7 +219,8 @@
           "name": "正式上线",
           "date": "07/31"
         }
-      ]
+      ],
+      "meetingActions": []
     },
     {
       "name": "洗衣机",
@@ -236,6 +253,18 @@
           "status": "in_progress",
           "name": "正式上线",
           "date": "07/31"
+        }
+      ],
+      "meetingActions": [
+        {
+          "meeting": "梳理需求内容",
+          "date": "2026-05-19",
+          "action": "- 洗衣机型号及mid确认"
+        },
+        {
+          "meeting": "梳理需求内容",
+          "date": "2026-05-19",
+          "action": "- 洗衣机节点返回"
         }
       ]
     },
@@ -271,7 +300,8 @@
           "name": "正式上线",
           "date": "07/10"
         }
-      ]
+      ],
+      "meetingActions": []
     }
   ],
   "risks": [
@@ -349,6 +379,40 @@
         "- 洗衣机节点返回",
         "- 净水机及中央净水机节点返回"
       ]
+    }
+  ],
+  "overdueItems": [
+    {
+      "device": "管线机",
+      "node": "需求确认",
+      "date": "05/20",
+      "days": 0
+    },
+    {
+      "device": "中央净水机",
+      "node": "需求确认",
+      "date": "05/20",
+      "days": 0
+    },
+    {
+      "device": "空气能热水器",
+      "node": "需求确认",
+      "date": "05/20",
+      "days": 0
+    }
+  ],
+  "upcomingItems": [
+    {
+      "device": "新风机",
+      "node": "开发阶段",
+      "date": "05/22",
+      "days": 2
+    },
+    {
+      "device": "空气能热水器",
+      "node": "开发阶段",
+      "date": "05/22",
+      "days": 2
     }
   ]
 }

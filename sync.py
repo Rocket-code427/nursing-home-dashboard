@@ -276,12 +276,67 @@ def build_dashboard_data(token, tables):
     # 读取风险（从设备表和任务表综合）
     risks = parse_risks(device_records, devices)
 
+    # 计算预警和逾期数据
+    today = datetime.now().date()
+    overdue_items = []
+    upcoming_items = []
+    
+    for device in devices:
+        for node in device.get("nodes", []):
+            date_str = node.get("date", "")
+            if not date_str or node.get("status") == "completed":
+                continue
+            
+            # 解析日期 MM/DD 格式
+            try:
+                dt = datetime.strptime(f"2026-{date_str.replace('/', '-')}", "%Y-%m-%d").date()
+            except ValueError:
+                continue
+            
+            if dt <= today:
+                # 逾期（包含当天）
+                days = (today - dt).days
+                overdue_items.append({
+                    "device": device["name"],
+                    "node": node["name"],
+                    "date": date_str,
+                    "days": days
+                })
+            elif (dt - today).days <= 7:
+                # 未来7天内到期（不包含当天）
+                upcoming_items.append({
+                    "device": device["name"],
+                    "node": node["name"],
+                    "date": date_str,
+                    "days": (dt - today).days
+                })
+    
+    # 合并会议待办到设备
+    meeting_actions_by_device = {}
+    for meeting in meetings:
+        for action in meeting.get("actions", []):
+            # 提取设备名（简单匹配）
+            for device in devices:
+                if device["name"] in action or action in device.get("nextAction", ""):
+                    if device["name"] not in meeting_actions_by_device:
+                        meeting_actions_by_device[device["name"]] = []
+                    meeting_actions_by_device[device["name"]].append({
+                        "meeting": meeting.get("title", ""),
+                        "date": meeting.get("date", ""),
+                        "action": action
+                    })
+    
+    for device in devices:
+        device["meetingActions"] = meeting_actions_by_device.get(device["name"], [])
+
     # 构建最终数据
     dashboard_data = {
         "updateTime": datetime.now().strftime("%Y-%m-%d %H:%M"),
         "devices": devices,
         "risks": risks,
-        "meetings": meetings
+        "meetings": meetings,
+        "overdueItems": sorted(overdue_items, key=lambda x: -x["days"]),
+        "upcomingItems": sorted(upcoming_items, key=lambda x: x["days"])
     }
 
     return dashboard_data
