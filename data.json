@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-05-27 17:48",
+  "updateTime": "2026-05-29 17:31",
   "devices": [
     {
       "name": "多联机",
@@ -386,31 +386,31 @@
       "device": "管线机",
       "node": "需求确认",
       "date": "05/20",
-      "days": 7
+      "days": 9
     },
     {
       "device": "中央净水机",
       "node": "需求确认",
       "date": "05/20",
-      "days": 7
+      "days": 9
     },
     {
       "device": "空气能热水器",
       "node": "需求确认",
       "date": "05/20",
-      "days": 7
+      "days": 9
     },
     {
       "device": "新风机",
       "node": "开发阶段",
       "date": "05/22",
-      "days": 5
+      "days": 7
     },
     {
       "device": "空气能热水器",
       "node": "开发阶段",
       "date": "05/22",
-      "days": 5
+      "days": 7
     }
   ],
   "upcomingItems": []
