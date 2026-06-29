@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-06-22 08:51",
+  "updateTime": "2026-06-29 17:30",
   "devices": [
     {
       "name": "多联机",
@@ -59,7 +59,7 @@
           "date": "05/22"
         },
         {
-          "status": "in_progress",
+          "status": "overdue",
           "name": "联调测试",
           "date": "06/26"
         },
@@ -210,7 +210,7 @@
           "date": "05/22"
         },
         {
-          "status": "in_progress",
+          "status": "overdue",
           "name": "联调测试",
           "date": "06/26"
         },
@@ -386,74 +386,86 @@
       "device": "管线机",
       "node": "需求确认",
       "date": "05/20",
-      "days": 33
+      "days": 40
     },
     {
       "device": "中央净水机",
       "node": "需求确认",
       "date": "05/20",
-      "days": 33
+      "days": 40
     },
     {
       "device": "空气能热水器",
       "node": "需求确认",
       "date": "05/20",
-      "days": 33
+      "days": 40
     },
     {
       "device": "新风机",
       "node": "开发阶段",
       "date": "05/22",
-      "days": 31
+      "days": 38
     },
     {
       "device": "空气能热水器",
       "node": "开发阶段",
       "date": "05/22",
-      "days": 31
+      "days": 38
     },
     {
       "device": "多联机",
       "node": "联调测试",
       "date": "06/15",
-      "days": 7
+      "days": 14
     },
     {
       "device": "空气净化器",
       "node": "联调测试",
       "date": "06/15",
-      "days": 7
+      "days": 14
     },
     {
       "device": "冰箱",
       "node": "联调测试",
       "date": "06/15",
-      "days": 7
+      "days": 14
     },
     {
       "device": "管线机",
       "node": "协议提供",
       "date": "06/19",
-      "days": 3
+      "days": 10
     },
     {
       "device": "中央净水机",
       "node": "协议提供",
       "date": "06/19",
-      "days": 3
-    }
-  ],
-  "upcomingItems": [
+      "days": 10
+    },
     {
       "device": "新风机",
       "node": "联调测试",
       "date": "06/26",
-      "days": 4
+      "days": 3
     },
     {
       "device": "空气能热水器",
       "node": "联调测试",
       "date": "06/26",
+      "days": 3
+    }
+  ],
+  "upcomingItems": [
+    {
+      "device": "管线机",
+      "node": "开发阶段",
+      "date": "07/03",
+      "days": 4
+    },
+    {
+      "device": "中央净水机",
+      "node": "开发阶段",
+      "date": "07/03",
       "days": 4
     }
   ]
