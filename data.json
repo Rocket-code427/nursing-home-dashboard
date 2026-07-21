@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-07-20 18:05",
+  "updateTime": "2026-07-21 17:30",
   "devices": [
     {
       "name": "多联机",
@@ -386,115 +386,115 @@
       "device": "管线机",
       "node": "需求确认",
       "date": "05/20",
-      "days": 61
+      "days": 62
     },
     {
       "device": "中央净水机",
       "node": "需求确认",
       "date": "05/20",
-      "days": 61
+      "days": 62
     },
     {
       "device": "空气能热水器",
       "node": "需求确认",
       "date": "05/20",
-      "days": 61
+      "days": 62
     },
     {
       "device": "新风机",
       "node": "开发阶段",
       "date": "05/22",
-      "days": 59
+      "days": 60
     },
     {
       "device": "空气能热水器",
       "node": "开发阶段",
       "date": "05/22",
-      "days": 59
+      "days": 60
     },
     {
       "device": "多联机",
       "node": "联调测试",
       "date": "06/15",
-      "days": 35
+      "days": 36
     },
     {
       "device": "空气净化器",
       "node": "联调测试",
       "date": "06/15",
-      "days": 35
+      "days": 36
     },
     {
       "device": "冰箱",
       "node": "联调测试",
       "date": "06/15",
-      "days": 35
+      "days": 36
     },
     {
       "device": "管线机",
       "node": "协议提供",
       "date": "06/19",
-      "days": 31
+      "days": 32
     },
     {
       "device": "中央净水机",
       "node": "协议提供",
       "date": "06/19",
-      "days": 31
+      "days": 32
     },
     {
       "device": "新风机",
       "node": "联调测试",
       "date": "06/26",
-      "days": 24
+      "days": 25
     },
     {
       "device": "空气能热水器",
       "node": "联调测试",
       "date": "06/26",
-      "days": 24
+      "days": 25
     },
     {
       "device": "管线机",
       "node": "开发阶段",
       "date": "07/03",
-      "days": 17
+      "days": 18
     },
     {
       "device": "中央净水机",
       "node": "开发阶段",
       "date": "07/03",
-      "days": 17
+      "days": 18
     },
     {
       "device": "多联机",
       "node": "正式上线",
       "date": "07/10",
-      "days": 10
+      "days": 11
     },
     {
       "device": "空气净化器",
       "node": "正式上线",
       "date": "07/10",
-      "days": 10
+      "days": 11
     },
     {
       "device": "冰箱",
       "node": "正式上线",
       "date": "07/10",
-      "days": 10
+      "days": 11
     },
     {
       "device": "管线机",
       "node": "联调测试",
       "date": "07/17",
-      "days": 3
+      "days": 4
     },
     {
       "device": "中央净水机",
       "node": "联调测试",
       "date": "07/17",
-      "days": 3
+      "days": 4
     }
   ],
   "upcomingItems": []
